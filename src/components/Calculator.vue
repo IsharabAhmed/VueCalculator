@@ -4,7 +4,7 @@
     <button @click="clear" class="btn">C</button>
     <button @click="sign" class="btn">+/-</button>
     <button @click="percent" class="btn">%</button>
-    <button @click="buttonide" class="btn operator">÷</button>
+    <button @click="divide" class="btn operator">÷</button>
     <button @click="append('7')" class="btn">7</button>
     <button @click="append('8')" class="btn">8</button>
     <button @click="append('9')" class="btn">9</button>
@@ -59,7 +59,7 @@ export default {
       this.previous = this.current;
       this.operatorClicked = true;
     },
-    buttonide() {
+    divide() {
       this.operator = (a, b) => a / b;
       this.setPrevious();
     },
